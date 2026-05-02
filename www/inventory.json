@@ -1,0 +1,1430 @@
+{
+  "lastUpdated": "2026-04-24T05:42:34.792Z",
+  "capsules": [
+    {
+      "id": "orafio",
+      "name": "Orafio",
+      "icon": "☕",
+      "intensity": 6,
+      "description": "Klasszikus, kiegyensúlyozott eszpresszó gazdag aromával és kellemes keserűséggel. Ha nem akarsz ízesített cuccokat, csak egy tiszta, erős kávét - ez a te kaviárod. Mindennapos klasszikus!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "espresso",
+      "recommendations": [
+        "Espresso",
+        "Cappuccino",
+        "Americano"
+      ],
+      "tags": [
+        "Karamellás",
+        "Pörkölt",
+        "Klasszikus"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 5,
+      "nespressoSku": "7036.20"
+    },
+    {
+      "id": "diavolitto",
+      "name": "Diavolitto",
+      "icon": "😈",
+      "intensity": 11,
+      "description": "Az ördög kedvenc kávéja - ha egyáltalán iszik kávét. Brutálisan intenzív, ütős kis adag, ami garantáltan felébreszt. Nem a gyengéknek való, de ha bírod, imádni fogod!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "espresso",
+      "recommendations": [
+        "Espresso",
+        "Ristretto",
+        "Macchiato"
+      ],
+      "tags": [
+        "Intenzív",
+        "Erős",
+        "Tüzes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7049.20"
+    },
+    {
+      "id": "il-caffe",
+      "name": "Il Caffè",
+      "icon": "🇮🇹",
+      "intensity": 11,
+      "description": "Az olasz kávékultúra esszenciája egyetlen kapszulában. Bársonyos, mégis kemény, mint egy szicíliai nagypapa. Ha igazán olaszos élményre vágysz, ez az igazi affare!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "espresso",
+      "recommendations": [
+        "Espresso",
+        "Ristretto",
+        "Macchiato"
+      ],
+      "tags": [
+        "Intenzív",
+        "Bársonyos",
+        "Olaszos"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7060.20"
+    },
+    {
+      "id": "altissio",
+      "name": "Altissio",
+      "icon": "🏔️",
+      "intensity": 9,
+      "description": "Testes és krémes, mint egy jó ölelés kávé formában. Latin-amerikai és afrikai kávék találkozása, ami egy sűrű, gazdag espresso-t ad. Aki a krémeset szereti, annak ez a mennyország!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "espresso",
+      "recommendations": [
+        "Espresso",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Testes",
+        "Krémes",
+        "Gazdag"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7048.20"
+    },
+    {
+      "id": "voltesso",
+      "name": "Voltesso",
+      "icon": "🌸",
+      "intensity": 4,
+      "description": "Könnyű és édes, mint egy tavaszi reggel. Ha nem szereted az erős kávékat, de imádod az espresso élményt, ez a te embered. Finom, lágy, és mosolyra késztet!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "espresso",
+      "recommendations": [
+        "Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Könnyű",
+        "Édes",
+        "Lágy"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7047.20"
+    },
+    {
+      "id": "altissio-decaffeinato",
+      "name": "Altissio Decaffeinato",
+      "icon": "🌙",
+      "intensity": 9,
+      "description": "Ugyanaz a testes, krémes Altissio, csak koffein nélkül. Tökéletes esti kávézáshoz, vagy ha a szíved azt mondja kávé, de az orvosod azt mondja ne. Kompromisszum nélküli koffeinmentes!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "espresso",
+      "recommendations": [
+        "Espresso",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Koffeinmentes",
+        "Testes",
+        "Krémes"
+      ],
+      "flavored": false,
+      "caffeine": false,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7000.20"
+    },
+    {
+      "id": "ristretto-intenso",
+      "name": "Ristretto Intenso",
+      "icon": "💪",
+      "intensity": 12,
+      "description": "A legkeményebb fiú a Vertuo családban! 12-es intenzitás, apró csésze, hatalmas élmény. Ez az a kávé, ami után úgy érzed, meg tudnád emelni az autót. Nem viccelünk!",
+      "size": "25ml",
+      "cupSize": 25,
+      "category": "ristretto",
+      "recommendations": [
+        "Ristretto",
+        "Espresso",
+        "Macchiato"
+      ],
+      "tags": [
+        "Ultra intenzív",
+        "Erős",
+        "Tüzes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7084.20"
+    },
+    {
+      "id": "ristretto-classico",
+      "name": "Ristretto Classico",
+      "icon": "🍫",
+      "intensity": 9,
+      "description": "Tiszta Arabica ristretto kakaós és gyümölcsös jegyekkel. Kicsi, de annál karakteresebb - mint egy mini szuperhős. A legrövidebb kávé, de a legnagyobb ízélmény!",
+      "size": "25ml",
+      "cupSize": 25,
+      "category": "ristretto",
+      "recommendations": [
+        "Ristretto",
+        "Espresso",
+        "Macchiato"
+      ],
+      "tags": [
+        "Kakaós",
+        "Gyümölcsös",
+        "Klasszikus"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7010.20"
+    },
+    {
+      "id": "double-espresso-scuro",
+      "name": "Double Espresso Scuro",
+      "icon": "🖤",
+      "intensity": 11,
+      "description": "Sötét és határozott, mint egy film noir hős. Dupla espresso, dupla élmény, dupla energia. Ha komolyan gondolod a reggelt, ez a te fegyvered!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "double-espresso",
+      "recommendations": [
+        "Dupla Espresso",
+        "Americano",
+        "Flat White"
+      ],
+      "tags": [
+        "Sötét",
+        "Határozott",
+        "Erős"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7298.20"
+    },
+    {
+      "id": "double-espresso-chiaro",
+      "name": "Double Espresso Chiaro",
+      "icon": "☀️",
+      "intensity": 8,
+      "description": "Sűrű és harsány dupla espresso, ami pont olyan, mint egy olasz piaci kereskedő: hangos, karakteres, de a szíve helyén van. Tejjel kombinálva mennyei!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "double-espresso",
+      "recommendations": [
+        "Dupla Espresso",
+        "Cappuccino",
+        "Latte"
+      ],
+      "tags": [
+        "Sűrű",
+        "Harsány",
+        "Sokoldalú"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7045.20"
+    },
+    {
+      "id": "double-espresso-dolce",
+      "name": "Double Espresso Dolce",
+      "icon": "🍯",
+      "intensity": 5,
+      "description": "Gabonás és malátás édeskés dupla espresso. Olyan, mint egy reggeli müzli, csak kávé formában - édes, lágyan simogató, és jókedvre derít. A szelídebb lelkek kedvence!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "double-espresso",
+      "recommendations": [
+        "Dupla Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Gabonás",
+        "Malátás",
+        "Édes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 3,
+      "nespressoSku": "7085.20"
+    },
+    {
+      "id": "double-espresso-chiaro-decaffeinato",
+      "name": "Double Espresso Chiaro Decaffeinato",
+      "icon": "🌛",
+      "intensity": 8,
+      "description": "A Chiaro koffeinmentes verziója, de az íze ugyanúgy harsány és sűrű. Ha este is kell a dupla espresso élmény, de aludni is szeretnél - voilà!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "double-espresso",
+      "recommendations": [
+        "Dupla Espresso",
+        "Cappuccino",
+        "Latte"
+      ],
+      "tags": [
+        "Koffeinmentes",
+        "Sűrű",
+        "Harsány"
+      ],
+      "flavored": false,
+      "caffeine": false,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7279.20"
+    },
+    {
+      "id": "fortado",
+      "name": "Fortado",
+      "icon": "🦁",
+      "intensity": 8,
+      "description": "Intenzív és testes Gran Lungo - nagyobb adag, nagy élmény. Olyan, mint egy oroszlán: erős, tekintélyes, és tiszteletet parancsol. A reggeli rutin királyává tesz!",
+      "size": "150ml",
+      "cupSize": 150,
+      "category": "gran-lungo",
+      "recommendations": [
+        "Gran Lungo",
+        "Americano",
+        "Fekete"
+      ],
+      "tags": [
+        "Intenzív",
+        "Testes",
+        "Erős"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7231.20"
+    },
+    {
+      "id": "fortado-decaffeinato",
+      "name": "Fortado Decaffeinato",
+      "icon": "🌙",
+      "intensity": 8,
+      "description": "Koffeinmentes, de intenzív! Testes, gazdag íz anélkül, hogy feldobna. Ha este is kéne egy kávé, de aztán aludni akarsz - ez a megoldás. Koffeinmentes, de nem ízetlen!",
+      "size": "150ml",
+      "cupSize": 150,
+      "category": "gran-lungo",
+      "recommendations": [
+        "Gran Lungo",
+        "Americano",
+        "Latte"
+      ],
+      "tags": [
+        "Koffeinmentes",
+        "Intenzív",
+        "Testes"
+      ],
+      "flavored": false,
+      "caffeine": false,
+      "inStock": true,
+      "quantity": 5,
+      "nespressoSku": "7015.20"
+    },
+    {
+      "id": "arondio",
+      "name": "Arondio",
+      "icon": "🌾",
+      "intensity": 6,
+      "description": "Gabonás és enyhe, mint egy kellemes délelőtti séta. Könnyen iható, nem tolakodó, de van benne karakter. Azoknak, akik szeretik a kávét, de nem akarnak belőle harcot!",
+      "size": "150ml",
+      "cupSize": 150,
+      "category": "gran-lungo",
+      "recommendations": [
+        "Gran Lungo",
+        "Americano",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Gabonás",
+        "Enyhe",
+        "Kiegyensúlyozott"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7013.20"
+    },
+    {
+      "id": "inizio",
+      "name": "Inizio",
+      "icon": "🌅",
+      "intensity": 4,
+      "description": "Virágos és gabonás, mint egy tavaszias hajnal. A leglágyabb Gran Lungo, ami finoman ébreszt, nem rázza fel az egész szervezeted. Elegáns kezdés a naphoz!",
+      "size": "150ml",
+      "cupSize": 150,
+      "category": "gran-lungo",
+      "recommendations": [
+        "Gran Lungo",
+        "Americano",
+        "Fekete"
+      ],
+      "tags": [
+        "Virágos",
+        "Gabonás",
+        "Lágy"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7014.20"
+    },
+    {
+      "id": "intenso",
+      "name": "Intenso",
+      "icon": "⚫",
+      "intensity": 9,
+      "description": "Sűrű és mély tónusú, mint egy bársonyos éjszaka. Ez a mug méretű kávé nem viccel: erős, gazdag, és megmutatja, miért hívják Intenso-nak. Reggeli ébresztő deluxe!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Sűrű",
+        "Mély",
+        "Intenzív"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7042.20"
+    },
+    {
+      "id": "stormio",
+      "name": "Stormio",
+      "icon": "⛈️",
+      "intensity": 8,
+      "description": "Gazdag és markáns, mint egy vihar után a friss levegő. Fűszeres, erős, és pont annyira vad, amennyire kell. Ha a reggeled viharos, ez a kávé rendbe tesz!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Gazdag",
+        "Markáns",
+        "Fűszeres"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7040.20"
+    },
+    {
+      "id": "odacio",
+      "name": "Odacio",
+      "icon": "🔥",
+      "intensity": 7,
+      "description": "Határozott és élénk, mintha valaki rádiózna a füledbe, hogy induljon a nap! Merész keverék, ami nem engedi, hogy elbóbiskolj. Bátrak kávéja, gyávák elkerüljék!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Határozott",
+        "Élénk",
+        "Merész"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7041.20"
+    },
+    {
+      "id": "melozio",
+      "name": "Melozio",
+      "icon": "🎶",
+      "intensity": 6,
+      "description": "Selymes és elragadó, mint egy kellemes dallam. A Nespresso bestsellere nem véletlenül az: kiegyensúlyozott, mindenkit elbűvölő, és soha nem hagy cserben. A biztos választás!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Americano",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Selymes",
+        "Kiegyensúlyozott",
+        "Kellemes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7039.20"
+    },
+    {
+      "id": "melozio-decaffeinato",
+      "name": "Melozio Decaffeinato",
+      "icon": "🎵",
+      "intensity": 6,
+      "description": "A Melozio minden varázsa, koffein nélkül. Ugyanolyan selymes és elragadó, de utána tudsz aludni. Esti kávézás bűntudat nélkül - ez a kompromisszum művészete!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Americano",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Koffeinmentes",
+        "Selymes",
+        "Kiegyensúlyozott"
+      ],
+      "flavored": false,
+      "caffeine": false,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7023.20"
+    },
+    {
+      "id": "half-caffeinato",
+      "name": "Half Caffeinato",
+      "icon": "⚖️",
+      "intensity": 5,
+      "description": "Fél koffein, dupla élvezet! Édes és bársonyos, de nem rúg be teljesen. Az arany középút azoknak, akik nem akarnak választani a kávé és az alvás között!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Americano",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Félig koffeines",
+        "Édes",
+        "Bársonyos"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7025.20"
+    },
+    {
+      "id": "solelio",
+      "name": "Solelio",
+      "icon": "🌞",
+      "intensity": 2,
+      "description": "Gyümölcsös és könnyed, mint egy napsütötte délelőtt. A leglágyabb mug kávé, ami inkább simogat, mint ébreszt. Ha nem szereted az erős kávékat, ez lesz a nagy szerelmed!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Fekete",
+        "Americano",
+        "Latte"
+      ],
+      "tags": [
+        "Gyümölcsös",
+        "Könnyed",
+        "Lágy"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7024.20"
+    },
+    {
+      "id": "mexico",
+      "name": "Mexico",
+      "icon": "🌶️",
+      "intensity": 7,
+      "description": "Intenzív és fűszeres, mint egy mexikói fiesta! Organikus kávé, ami megmutatja, miért híres Mexikó a kávéjáról. Fűszeres jegyei garantáltan feldobják a napodat!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "master-origin",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Intenzív",
+        "Fűszeres",
+        "Organikus"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7026.20"
+    },
+    {
+      "id": "costa-rica",
+      "name": "Costa Rica",
+      "icon": "🌿",
+      "intensity": 7,
+      "description": "Malátás és édes, mint egy trópusi álom. Costa Rica-i honey-processed kávé, ami selymes édességgel simogatja az ízlelőbimbóidat. Pura vida, kávé formában!",
+      "size": "150ml",
+      "cupSize": 150,
+      "category": "master-origin",
+      "recommendations": [
+        "Gran Lungo",
+        "Americano",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Malátás",
+        "Édes",
+        "Trópusi"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7043.20"
+    },
+    {
+      "id": "peru-organic",
+      "name": "Peru Organic",
+      "icon": "🦙",
+      "intensity": 6,
+      "description": "Gyümölcsös és elegáns organikus kávé Peru hegyeiből. Olyan finom, mint egy andoki naplemente - tiszta, természetes, és fenntartható. Bio kávé, amitől jó érzés inni!",
+      "size": "40ml",
+      "cupSize": 40,
+      "category": "master-origin",
+      "recommendations": [
+        "Espresso",
+        "Cappuccino",
+        "Americano"
+      ],
+      "tags": [
+        "Gyümölcsös",
+        "Elegáns",
+        "Organikus"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7012.20"
+    },
+    {
+      "id": "colombia",
+      "name": "Colombia",
+      "icon": "🇨🇴",
+      "intensity": 5,
+      "description": "Gyümölcsös és boros jegyű kolumbiai kávé, ami olyan, mint egy jó vörösbor - komplex, gazdag, és egyre jobb minden korttyal. Juan Valdez büszke lenne rád!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "master-origin",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Gyümölcsös",
+        "Boros",
+        "Komplex"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7028.20"
+    },
+    {
+      "id": "el-salvador",
+      "name": "El Salvador",
+      "icon": "🌋",
+      "intensity": 5,
+      "description": "Édes és lekváros, mint egy vasárnapi reggeli pirítós házi lekvárral. Honey-processed kávé, ami édes, gyümölcsös, és garantáltan jókedvre derít!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "master-origin",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Latte"
+      ],
+      "tags": [
+        "Édes",
+        "Lekváros",
+        "Gyümölcsös"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7027.20"
+    },
+    {
+      "id": "ethiopia",
+      "name": "Ethiopia",
+      "icon": "🌺",
+      "intensity": 4,
+      "description": "Virágos és finom, mint egy etióp kávéceremónia. A kávé szülőhazájából származik, és olyan komplex ízvilágot kínál, ami minden korttyal újabb meglepetést tartogat!",
+      "size": "150ml",
+      "cupSize": 150,
+      "category": "master-origin",
+      "recommendations": [
+        "Gran Lungo",
+        "Fekete",
+        "Americano"
+      ],
+      "tags": [
+        "Virágos",
+        "Finom",
+        "Komplex"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7017.20"
+    },
+    {
+      "id": "roasted-hazelnut",
+      "name": "Roasted Hazelnut",
+      "icon": "🌰",
+      "intensity": null,
+      "description": "Bűntelen öröm: gazdag és mogyorós. A kekszeszes aromájú Arabica kávék és a karamellizált, pörkölt mogyoró ellenállhatatlan párosa. Olyan, mint egy Nutella, csak kávé formában!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Mogyorós",
+        "Karamellás",
+        "Kekszeszes"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7294.20"
+    },
+    {
+      "id": "sweet-vanilla",
+      "name": "Sweet Vanilla",
+      "icon": "🍦",
+      "intensity": null,
+      "description": "Krémes vanília álom kávé formában. Olyan, mint egy fagyis szombat délután, csak meleg és koffeines. Ha szereeted az édeset, ez lesz a go-to kávéd minden nap!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Vaníliás",
+        "Krémes",
+        "Édes"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7292.20"
+    },
+    {
+      "id": "sweet-vanilla-decaffeinato",
+      "name": "Sweet Vanilla Decaffeinato",
+      "icon": "🌜",
+      "intensity": null,
+      "description": "Vaníliás krémes álom, koffein nélkül. Tökéletes esti nassoláshoz, vagy ha a tested kávét kíván, de az agyad alvást. A vaníliás boldogság nem ismer időkorlátot!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Koffeinmentes",
+        "Vaníliás",
+        "Krémes"
+      ],
+      "flavored": true,
+      "caffeine": false,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7057.20"
+    },
+    {
+      "id": "golden-caramel",
+      "name": "Golden Caramel",
+      "icon": "🍮",
+      "intensity": null,
+      "description": "Krémes karamell és kekszeszes ízek tánca egy csészében. Olyan, mint egy crème brûlée kávé formában. Ha van kedvenc desszerted, mostantól kávéban is megkapod!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Karamellás",
+        "Kekszeszes",
+        "Krémes"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7295.20"
+    },
+    {
+      "id": "rich-chocolate",
+      "name": "Rich Chocolate",
+      "icon": "🍫",
+      "intensity": null,
+      "description": "Csokis mennyország kávéba csomagolva. Krémes, gazdag, és olyan bűnösen finom, hogy szinte desszertnek számít. Csokirajongóknak kötelező, a többieknek nagyon ajánlott!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Mocha"
+      ],
+      "tags": [
+        "Csokis",
+        "Krémes",
+        "Gazdag"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 6,
+      "nespressoSku": "7296.20"
+    },
+    {
+      "id": "bianco-doppio",
+      "name": "Bianco Doppio",
+      "icon": "🥛",
+      "intensity": null,
+      "description": "Lágy és karamellás, kifejezetten tejes receptekhez tervezve. A világos pörkölés és a tej együtt csodákat művelnek - ez a latte szerelmeseinek született!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Flat White",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Lágy",
+        "Karamellás",
+        "Tejes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 2,
+      "nespressoSku": "7016.20"
+    },
+    {
+      "id": "bianco-forte",
+      "name": "Bianco Forte",
+      "icon": "🥛",
+      "intensity": null,
+      "description": "Intenzív és testes, de tejjel kombinálva bársonyos harmónia. Ha a latte-d erős karaktert kíván, ez a kapszula nem hagy cserben. Erős kávé, lágy szív!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "barista-creations",
+      "recommendations": [
+        "Latte",
+        "Flat White",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Intenzív",
+        "Testes",
+        "Tejes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7030.20"
+    },
+    {
+      "id": "ice-leggero",
+      "name": "Ice Leggero",
+      "icon": "🧊",
+      "intensity": 6,
+      "description": "Könnyű és gyümölcsös jegeskávé, ami úgy hűsít, mint egy medencés parti. Jégre készítve igazán felszabadító - nyáron mennyei, de télen is bűnösen jó!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "ice",
+      "recommendations": [
+        "Jeges Latte",
+        "Iced Cappuccino",
+        "Jégen"
+      ],
+      "tags": [
+        "Jeges",
+        "Könnyű",
+        "Gyümölcsös"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": null
+    },
+    {
+      "id": "ice-forte",
+      "name": "Ice Forte",
+      "icon": "❄️",
+      "intensity": 8,
+      "description": "Intenzív jeges kávé, ami nem engedi, hogy a jég felhígítsa az élményt. Erős, karakteres, és jégen is megőrzi a gerincét. A nyár legkeményebb hűsítője!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "ice",
+      "recommendations": [
+        "Jeges Americano",
+        "Jégen",
+        "Jeges Latte"
+      ],
+      "tags": [
+        "Jeges",
+        "Intenzív",
+        "Erős"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": null
+    },
+    {
+      "id": "cold-brew-style-intense",
+      "name": "Cold Brew Style Intense",
+      "icon": "🥶",
+      "intensity": null,
+      "description": "Édes karamellás, pörkölt gabonás cold brew - a hagyományosan hosszú ideig készülő jeges kávé percek alatt. Sima, selymes, és bűnösen hűsítő. A nyár sztárja!",
+      "size": "355ml",
+      "cupSize": 355,
+      "category": "ice",
+      "recommendations": [
+        "Jégen",
+        "Cold Brew",
+        "Jeges Latte"
+      ],
+      "tags": [
+        "Jeges",
+        "Karamellás",
+        "Selymes"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 3,
+      "nespressoSku": "7037.20"
+    },
+    {
+      "id": "stormio-go",
+      "name": "Stormio Go",
+      "icon": "⚡",
+      "intensity": 8,
+      "description": "A Stormio ereje extra koffeinnel felturbózva! Gazdag és erős, plusz hozzáadott koffein a maximális hatásért. Ha a sima Stormio nem elég, ez a next level!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "coffee-plus",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Extra koffeines",
+        "Gazdag",
+        "Erős"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7064.20"
+    },
+    {
+      "id": "melozio-go",
+      "name": "Melozio Go",
+      "icon": "🚀",
+      "intensity": 6,
+      "description": "A Melozio kiegyensúlyozott íze hozzáadott koffeinnel. Könnyed ízvilág, extra lökés - mint egy rakéta, ami finoman emel el. A legjobb mindkét világból!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "coffee-plus",
+      "recommendations": [
+        "Americano",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Extra koffeines",
+        "Kiegyensúlyozott",
+        "Könnyed"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7065.20"
+    },
+    {
+      "id": "vivida",
+      "name": "Vivida",
+      "icon": "✨",
+      "intensity": 6,
+      "description": "Gabonás, édes és gazdag Coffee+ kapszula. Élénk ízvilág, ami felpezsdít és mosolyra késztet. Olyan, mint egy energiabomba bújtatva egy finom kávéba!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "coffee-plus",
+      "recommendations": [
+        "Americano",
+        "Fekete",
+        "Latte"
+      ],
+      "tags": [
+        "Gabonás",
+        "Édes",
+        "Energizáló"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7063.20"
+    },
+    {
+      "id": "active",
+      "name": "Active",
+      "icon": "💚",
+      "intensity": null,
+      "description": "Mandulás és vaníliás kávé B6-vitaminnal - az aktív életstílus kávéja. Indítsd a reggelt egy kis extra törődéssel a tested iránt. Finom és hasznos egyben!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "coffee-plus",
+      "recommendations": [
+        "Dupla Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Mandulás",
+        "Vaníliás",
+        "Vitaminos"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7192.20"
+    },
+    {
+      "id": "ginseng-delight",
+      "name": "Coffee+ Ginseng Delight",
+      "icon": "🍯",
+      "intensity": null,
+      "description": "Könnyed karamell és ginzeng. Sima textúrájú, édes, karamellás ízvilágú double espresso, ginzengkivonattal. Olyan, mintha egy spa-nap lenne a csészédben!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "coffee-plus",
+      "recommendations": [
+        "Dupla Espresso",
+        "Latte",
+        "Americano"
+      ],
+      "tags": [
+        "Karamellás",
+        "Ginzenges",
+        "Energizáló"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 3,
+      "nespressoSku": "7066.20"
+    },
+    {
+      "id": "alto-ambrato",
+      "name": "Alto Ambrato",
+      "icon": "🥇",
+      "intensity": 4,
+      "description": "Arany és könnyű, mint egy napsugár egy nagy bögrében. Az Alto méret tökéletes, ha sok kávét akarsz, de nem erős verziót. Reggeli csevegésekhez ideális társaság!",
+      "size": "355ml",
+      "cupSize": 355,
+      "category": "alto",
+      "recommendations": [
+        "Alto",
+        "Fekete",
+        "Americano"
+      ],
+      "tags": [
+        "Könnyű",
+        "Gabonás",
+        "Nagy adag"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7001.80"
+    },
+    {
+      "id": "carafe-pour-over-style-intense",
+      "name": "Carafe Pour-Over Style Intense",
+      "icon": "🫖",
+      "intensity": 8,
+      "description": "Egy kapszulából egy egész kancsó kávé! 535ml-nyi, intenzíven pörkölt, füstös-fás ízvilág perui és kolumbiai Arabicából. Megoszthatod - vagy megtarthatod magadnak, mi nem ítélünk.",
+      "size": "535ml",
+      "cupSize": 535,
+      "category": "carafe",
+      "recommendations": [
+        "Pour-Over",
+        "Fekete",
+        "Kancsóban"
+      ],
+      "tags": [
+        "Nagy adag",
+        "Pour-Over",
+        "Megosztható"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 10,
+      "nespressoSku": "7006.20"
+    },
+    {
+      "id": "white-chocolate-strawberry",
+      "name": "White Chocolate & Strawberry",
+      "icon": "🍓",
+      "intensity": null,
+      "description": "Selymes fehér csokoládé találkozik friss eperrel ebben a nyári álomban. Édeskés, gyümölcsös, és simogatja a lelked. Tökéletes desszertkávé vagy délutáni nassolás helyett!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "limited",
+      "recommendations": [
+        "Jeges Latte",
+        "Frappé",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Édes",
+        "Gyümölcsös",
+        "Krémes"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7069.20"
+    },
+    {
+      "id": "pistachio-vanilla-over-ice",
+      "name": "Pistachio Vanilla Over Ice",
+      "icon": "🟢",
+      "intensity": null,
+      "description": "Krémes pisztácia és vanília jeges kávénak tervezve. Olyan, mint egy olasz gelato, csak iszod. Nyáron mennyei, de télen is bűnösen finom!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "limited",
+      "recommendations": [
+        "Jeges Latte",
+        "Frappé",
+        "Iced Cappuccino"
+      ],
+      "tags": [
+        "Pisztáciás",
+        "Vaníliás",
+        "Jeges"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7068.20"
+    },
+    {
+      "id": "festive-double-espresso",
+      "name": "Festive Collection Double Espresso",
+      "icon": "🎄",
+      "intensity": 7,
+      "description": "Ünnepi dupla espresso afrikai kávékból - megtestesült karácsonyi varázslat. Testes, gazdag, és az ünnepek hangulatát hozza minden kortyban!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "limited",
+      "recommendations": [
+        "Dupla Espresso",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Ünnepi",
+        "Testes",
+        "Afrikai"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7079.20"
+    },
+    {
+      "id": "festive-sweet-almond-hibiscus",
+      "name": "Festive Collection Sweet Almond And Hibiscus",
+      "icon": "🌺",
+      "intensity": null,
+      "description": "Édes mandula és hibiszkusz ünnepi találkozása. Virágos, édes, és annyira elegáns, hogy szinte karácsonyfadísz lehetne. Különleges ízélmény ünnepi hangulathoz!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "limited",
+      "recommendations": [
+        "Dupla Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Mandulás",
+        "Virágos",
+        "Ünnepi"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 7,
+      "nespressoSku": "7078.20"
+    },
+    {
+      "id": "festive-cinnamon-tamarind",
+      "name": "Festive Collection Cinnamon And Candied Tamarind",
+      "icon": "🎁",
+      "intensity": null,
+      "description": "Fahéjas és kandírozott tamarind - egzotikus ünnepi meglepetés. Melengetően fűszeres, édeskés, és olyan különleges, mint egy titokzatos ajándék a fa alatt!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "limited",
+      "recommendations": [
+        "Dupla Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Fahéjas",
+        "Fűszeres",
+        "Ünnepi"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7075.20"
+    },
+    {
+      "id": "peppermint-pinwheel",
+      "name": "Peppermint Pinwheel",
+      "icon": "🍬",
+      "intensity": null,
+      "description": "Cukorkásan édes borsmenta ízesítésű kávé, ami az ünnepi nyalánkságokat idézi. Mintha egy mentás cukorkát dobtál volna a kávédba - frissítő és édes egyszerre!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "limited",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Mocha"
+      ],
+      "tags": [
+        "Mentás",
+        "Édes",
+        "Ünnepi"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7273.20"
+    },
+    {
+      "id": "gingerbread",
+      "name": "Gingerbread",
+      "icon": "🎅",
+      "intensity": null,
+      "description": "Gabonás és fűszeres, mint a nagyi mézeskalácsa. Az ünnepi hangulat egy csészében - fahéj, gyömbér, és minden, ami jó. Karácsony bármikor, amikor csak akarod!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "limited",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Flat White"
+      ],
+      "tags": [
+        "Fűszeres",
+        "Mézeskalácsos",
+        "Ünnepi"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 2,
+      "nespressoSku": "7283.20"
+    },
+    {
+      "id": "maple-pecan",
+      "name": "Maple Pecan",
+      "icon": "🍁",
+      "intensity": null,
+      "description": "Krémes juharszirup és ropogós pekándió harmonikus párosítása. Ez a kávé olyan, mint egy hétvégi reggeli palacsinták mellé. Édes, diós, és totál függőséget okoz!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "limited",
+      "recommendations": [
+        "Latte",
+        "Cappuccino",
+        "Americano"
+      ],
+      "tags": [
+        "Édes",
+        "Diós",
+        "Krémes"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": null
+    },
+    {
+      "id": "pumpkin-spice-cake",
+      "name": "Pumpkin Spice Cake",
+      "icon": "🎃",
+      "intensity": null,
+      "description": "Őszi varázslatot idéző kávé édes sütőtök fűszerekkel, fahéjjal és vaníliával. Tökéletes választás, ha valami meleget és kényeztetőt keresel. Úgy ízlik, mint a nagyi tökös pitéje, csak kávé formában!",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "limited",
+      "recommendations": [
+        "Cappuccino",
+        "Latte",
+        "Flat White"
+      ],
+      "tags": [
+        "Édes",
+        "Fűszeres",
+        "Őszi"
+      ],
+      "flavored": true,
+      "caffeine": true,
+      "inStock": true,
+      "quantity": 4,
+      "nespressoSku": null
+    },
+    {
+      "id": "samra-origins-tanzania",
+      "name": "SAMRA ORIGINS Tanzania",
+      "icon": "🎵",
+      "intensity": 5,
+      "description": "A The Weeknd együttműködésével született különleges kávé - gyümölcsös, citrusos, és egy csipetnyi szárított gabonás ízzel. Amikor a zene és a kávé találkozik, születik a SAMRA!",
+      "size": "80ml",
+      "cupSize": 80,
+      "category": "limited",
+      "recommendations": [
+        "Dupla Espresso",
+        "Americano",
+        "Cappuccino"
+      ],
+      "tags": [
+        "Gyümölcsös",
+        "Citrusos",
+        "Limitált"
+      ],
+      "flavored": false,
+      "caffeine": true,
+      "inStock": false,
+      "quantity": 0,
+      "nespressoSku": "7077.20"
+    },
+    {
+      "id": "french-lavender-vanilla-decaffeinato",
+      "name": "French Lavender Vanilla Decaffeinato",
+      "icon": "💜",
+      "intensity": 2,
+      "description": "Levendula és vanília egy koffeinmentes kávéban? Igen, és brutálisan jól működik! Lágy, virágos illat, édes vanília utóíz, nulla koffein - tökéletes esti rituálé, amikor már nem akarsz pörögni, csak élvezni.",
+      "size": "230ml",
+      "cupSize": 230,
+      "category": "mug",
+      "recommendations": [
+        "Mug",
+        "Iced",
+        "Latte"
+      ],
+      "tags": [
+        "Virágos",
+        "Vaníliás",
+        "Koffeinmentes"
+      ],
+      "flavored": true,
+      "caffeine": false,
+      "inStock": true,
+      "quantity": 4,
+      "nespressoSku": "44112037"
+    }
+  ]
+}
