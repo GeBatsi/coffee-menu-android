@@ -1,14 +1,19 @@
-import { CapacitorConfig } from '@capacitor/cli';
+﻿import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.gebatsi.coffeemenu',
-  appName: 'Kávé Menü',
+  appName: 'Kave Menu',
   webDir: 'www',
   server: {
     androidScheme: 'https'
   },
   android: {
     allowMixedContent: false
+  },
+  plugins: {
+    CapacitorHttp: {
+      enabled: true
+    }
   }
 };
 
