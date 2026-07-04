@@ -2599,7 +2599,11 @@
                 const response = await fetch(BASE_URL + '/inventory.json');
                 const data = await response.json();
                 // Csak a készleten lévő kapszulákat jelenítjük meg + Specialty Coffee (mindig elérhető)
-                coffees = [SPECIALTY_COFFEE, ...data.capsules.filter(c => c.inStock)];
+                // Rendezés: legrégebben rendelt felül, legutóbb rendelt alul (lastOrdered nélküliek legelöl)
+                const inStock = data.capsules
+                    .filter(c => c.inStock)
+                    .sort((a, b) => (a.lastOrdered || '').localeCompare(b.lastOrdered || ''));
+                coffees = [SPECIALTY_COFFEE, ...inStock];
                 renderCoffees();
             } catch (error) {
                 console.error('Hiba az inventory.json betöltésekor:', error);
