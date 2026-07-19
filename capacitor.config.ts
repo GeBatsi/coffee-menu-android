@@ -2,7 +2,7 @@
 
 const config: CapacitorConfig = {
   appId: 'com.gebatsi.coffeemenu',
-  appName: 'Kave Menu',
+  appName: 'Kávé Menü',
   webDir: 'www',
   server: {
     androidScheme: 'https'
