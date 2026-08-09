@@ -2593,12 +2593,27 @@
             list.removeEventListener('touchend', onRolodexTouchEnd);
         }
 
-        // Inicializálás - inventory.json betöltése
+        // Inicializálás - készlet betöltése
         const BASE_URL = 'https://home-coffee-menu.netlify.app';
+
+        // Elsődlegesen az /api/inventory-ból olvasunk, mert az a repóból dolgozik:
+        // a bot és az admin oda ír, a statikus inventory.json viszont csak a site
+        // újradeployolásakor frissül. Tartalék a statikus fájl.
+        async function fetchInventory() {
+            try {
+                const response = await fetch(BASE_URL + '/api/inventory', { cache: 'no-store' });
+                if (response.ok) return await response.json();
+                console.warn('/api/inventory hiba:', response.status, '- statikus fájlra váltunk');
+            } catch (error) {
+                console.warn('/api/inventory elérhetetlen:', error, '- statikus fájlra váltunk');
+            }
+            const fallback = await fetch(BASE_URL + '/inventory.json?t=' + Date.now(), { cache: 'no-store' });
+            return await fallback.json();
+        }
+
         async function loadCoffees() {
             try {
-                const response = await fetch(BASE_URL + '/inventory.json');
-                const data = await response.json();
+                const data = await fetchInventory();
                 // Csak a készleten lévő kapszulákat jelenítjük meg + Specialty Coffee (mindig elérhető)
                 // Rendezés: legrégebben rendelt felül, legutóbb rendelt alul (lastOrdered nélküliek legelöl)
                 const inStock = data.capsules
@@ -2682,8 +2697,9 @@
 
         async function loadAdminPanel() {
             try {
-                const response = await fetch(BASE_URL + '/inventory.json');
-                const data = await response.json();
+                // Friss adat kell: mentéskor az egész fájlt felülírjuk, így egy régi
+                // pillanatkép visszaírná a bot időközbeni készletcsökkentéseit.
+                const data = await fetchInventory();
                 allCapsules = data.capsules;
 
                 allCapsules.forEach(c => {
