@@ -165,6 +165,22 @@
             font-size: 0.9em;
         }
 
+        /* Gép-vonal jelölés: az Original kapszula Vertuo gépbe nem jó (és fordítva) */
+        .line-badge {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 1px 7px;
+            border: 1px solid currentColor;
+            border-radius: 10px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.5em;
+            letter-spacing: 1px;
+            vertical-align: middle;
+            text-shadow: none;
+        }
+        .line-badge.line-vertuo { color: #00ffff; }
+        .line-badge.line-original { color: #ffcc00; }
+
         .expand-icon {
             font-size: 1.5em;
             color: #00ffff;
@@ -886,6 +902,7 @@
             text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
         }
         body.theme-doodle .coffee-intensity { color: #7ecdc0; }
+        body.theme-doodle .line-badge { font-family: 'Caveat', cursive; font-size: 0.6em; }
         body.theme-doodle .expand-icon {
             color: #7ecdc0;
             font-family: 'Caveat', cursive;
@@ -1670,12 +1687,22 @@
             </div>
 
             <div class="filter-group">
+                <div class="filter-label">⚙️ Gép</div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="setFilter('machine', 'all', this)">Összes</button>
+                    <button class="filter-btn" onclick="setFilter('machine', 'vertuo', this)">Vertuo</button>
+                    <button class="filter-btn" onclick="setFilter('machine', 'original', this)">Original</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
                 <div class="filter-label">☕ Csésze méret</div>
                 <div class="filter-buttons">
                     <button class="filter-btn active" onclick="setFilter('size', 'all', this)">Összes</button>
                     <button class="filter-btn" onclick="setFilter('size', '25', this)">Ristretto (25ml)</button>
                     <button class="filter-btn" onclick="setFilter('size', '40', this)">Espresso (40ml)</button>
                     <button class="filter-btn" onclick="setFilter('size', '80', this)">Double Espresso (80ml)</button>
+                    <button class="filter-btn" onclick="setFilter('size', '110', this)">Lungo (110ml)</button>
                     <button class="filter-btn" onclick="setFilter('size', '150', this)">Gran Lungo (150ml)</button>
                     <button class="filter-btn" onclick="setFilter('size', '230', this)">Mug (230ml)</button>
                     <button class="filter-btn" onclick="setFilter('size', '355', this)">Alto (355ml)</button>
@@ -1784,6 +1811,8 @@
                   { id: 'ristretto', name: 'Ristretto (25ml)' }],
             80:  [{ id: 'double',    name: 'Double Espresso (80ml)' },
                   { id: 'espresso',  name: 'Espresso (40ml)' }],
+            110: [{ id: 'lungo',     name: 'Lungo (110ml)' },
+                  { id: 'espresso',  name: 'Espresso (40ml)' }],
             150: [{ id: 'granlungo', name: 'Gran Lungo (150ml)' },
                   { id: 'espresso',  name: 'Espresso (40ml)' }],
             230: [{ id: 'mug',       name: 'Mug (230ml)' },
@@ -1848,6 +1877,20 @@
             return [...blackOptions, ...MILK_OPTIONS];
         }
 
+        // Gép-vonal: a machineType nélküli (régi) tételek Vertuo-k
+        function getMachineType(capsule) {
+            return capsule.machineType === 'original' ? 'original' : 'vertuo';
+        }
+
+        // Csak akkor jelöljük a vonalat, ha a menüben mindkét vonal szerepel
+        function lineBadgeHTML(capsule, list) {
+            if (capsule.isSpecialty) return '';
+            const lines = new Set(list.filter(c => !c.isSpecialty).map(getMachineType));
+            if (lines.size < 2) return '';
+            const line = getMachineType(capsule);
+            return `<span class="line-badge line-${line}">${line === 'original' ? 'ORIGINAL' : 'VERTUO'}</span>`;
+        }
+
         function renderCoffees() {
             const container = document.getElementById('coffeeList');
 
@@ -1865,7 +1908,7 @@
                     <div class="coffee-header" onclick="toggleCard(${index})">
                         <div class="coffee-icon">${coffee.icon}</div>
                         <div class="coffee-title">
-                            <div class="coffee-name">${coffee.name}</div>
+                            <div class="coffee-name">${coffee.name}${lineBadgeHTML(coffee, coffees)}</div>
                             <div class="coffee-intensity">${intensityText}</div>
                         </div>
                         <div class="expand-icon">▼</div>
@@ -2334,7 +2377,7 @@
         }
 
         // Szűrő logika
-        const activeFilters = { caffeine: 'all', size: 'all', intensity: 'all', flavored: 'all' };
+        const activeFilters = { caffeine: 'all', machine: 'all', size: 'all', intensity: 'all', flavored: 'all' };
 
         function setFilter(filterType, value, btnElement) {
             activeFilters[filterType] = value;
@@ -2358,6 +2401,7 @@
                 if (coffee.isSpecialty) {
                     let specialtyVisible = true;
                     if (activeFilters.caffeine === 'no') specialtyVisible = false;
+                    if (activeFilters.machine !== 'all') specialtyVisible = false;
                     if (activeFilters.size !== 'all') specialtyVisible = false;
                     if (activeFilters.intensity !== 'all') specialtyVisible = false;
                     if (activeFilters.flavored === 'yes') specialtyVisible = false;
@@ -2372,6 +2416,11 @@
                     } else if (activeFilters.caffeine === 'no') {
                         visible = visible && !coffee.caffeine;
                     }
+                }
+
+                // Gép-vonal szűrés
+                if (activeFilters.machine !== 'all') {
+                    visible = visible && getMachineType(coffee) === activeFilters.machine;
                 }
 
                 // Csésze méret szűrés (cupSize + kompatibilis méretek)
@@ -2647,9 +2696,11 @@
             'ristretto': 'Ristretto (25ml)',
             'double-espresso': 'Double Espresso (80ml)',
             'gran-lungo': 'Gran Lungo (150ml)',
+            'lungo': 'Lungo (110ml)',
             'mug': 'Mug (230ml)',
             'master-origin': 'Master Origin',
             'barista-creations': 'Barista Creations',
+            'decaffeinato': 'Koffeinmentes',
             'ice': 'Ice / Jeges',
             'coffee-plus': 'Coffee+',
             'alto': 'Alto (355ml)',
@@ -2658,10 +2709,14 @@
         };
 
         const CATEGORY_ORDER = [
-            'espresso', 'ristretto', 'double-espresso', 'gran-lungo',
-            'mug', 'master-origin', 'barista-creations', 'ice',
+            'espresso', 'ristretto', 'double-espresso', 'lungo', 'gran-lungo',
+            'mug', 'master-origin', 'barista-creations', 'decaffeinato', 'ice',
             'coffee-plus', 'alto', 'carafe', 'limited'
         ];
+
+        // Az admin lista vonalanként (Vertuo, majd Original) csoportosít
+        const MACHINE_TYPE_ORDER = ['vertuo', 'original'];
+        const MACHINE_TYPE_NAMES = { vertuo: 'Vertuo', original: 'Original' };
 
         function isAdminMode() {
             return new URLSearchParams(window.location.search).get('admin') === 'true';
@@ -2718,20 +2773,37 @@
             }
         }
 
+        // Vonal + kategória szerinti csoportok, rendezve. Az ismeretlen kategóriák
+        // a vonal végére kerülnek, hogy egy új kategória se tűnjön el csendben.
+        function groupAdminCapsules() {
+            const lines = new Set(allCapsules.map(getMachineType));
+            const showLine = lines.size > 1;
+            const groups = [];
+            MACHINE_TYPE_ORDER.forEach(line => {
+                const ofLine = allCapsules.filter(c => getMachineType(c) === line);
+                const categories = [
+                    ...CATEGORY_ORDER,
+                    ...new Set(ofLine.map(c => c.category).filter(cat => !CATEGORY_ORDER.includes(cat)))
+                ];
+                categories.forEach(cat => {
+                    const capsules = ofLine.filter(c => c.category === cat);
+                    if (capsules.length === 0) return;
+                    const catName = CATEGORY_NAMES[cat] || cat;
+                    groups.push({
+                        key: `${line}-${cat}`,
+                        title: showLine ? `${MACHINE_TYPE_NAMES[line]} · ${catName}` : catName,
+                        capsules
+                    });
+                });
+            });
+            return groups;
+        }
+
         function renderAdminPanel() {
             const container = document.getElementById('adminCapsuleList');
             container.innerHTML = '';
 
-            const grouped = {};
-            allCapsules.forEach(c => {
-                if (!grouped[c.category]) grouped[c.category] = [];
-                grouped[c.category].push(c);
-            });
-
-            CATEGORY_ORDER.forEach(catKey => {
-                const capsules = grouped[catKey];
-                if (!capsules || capsules.length === 0) return;
-
+            groupAdminCapsules().forEach(({ key, title, capsules }) => {
                 const section = document.createElement('div');
                 section.className = 'admin-category';
 
@@ -2740,8 +2812,8 @@
 
                 section.innerHTML = `
                     <div class="admin-category-title">
-                        ${CATEGORY_NAMES[catKey] || catKey}
-                        <span id="cat-stats-${catKey}" style="color: #888; font-size: 0.8em;">
+                        ${title}
+                        <span id="cat-stats-${key}" style="color: #888; font-size: 0.8em;">
                             (${totalQty} db / ${inStockCount} fajta)
                         </span>
                     </div>
@@ -2858,15 +2930,9 @@
             saveBtn.disabled = changes === 0 || patInput.value.trim() === '';
 
             // Update category header stats
-            const grouped = {};
-            allCapsules.forEach(c => {
-                if (!grouped[c.category]) grouped[c.category] = [];
-                grouped[c.category].push(c);
-            });
-            Object.keys(grouped).forEach(catKey => {
-                const el = document.getElementById(`cat-stats-${catKey}`);
+            groupAdminCapsules().forEach(({ key, capsules }) => {
+                const el = document.getElementById(`cat-stats-${key}`);
                 if (!el) return;
-                const capsules = grouped[catKey];
                 const inStockCount = capsules.filter(c => currentStockState[c.id]).length;
                 const totalQty = capsules.reduce((sum, c) => sum + (currentQuantityState[c.id] || 0), 0);
                 el.textContent = `(${totalQty} db / ${inStockCount} fajta)`;
@@ -3006,7 +3072,10 @@
 
         function getNespressoCartUrl(capsules) {
             const hash = buildNespressoCartHash(capsules);
-            return 'https://www.nespresso.com/hu/hu/order/capsules/vertuo' + hash;
+            // A kosár-helper bármelyik /hu/ oldalon működik (a kosár közös);
+            // csak tisztán Original rendelésnél nyitjuk az Original oldalt.
+            const line = capsules.every(c => getMachineType(c) === 'original') ? 'original' : 'vertuo';
+            return `https://www.nespresso.com/hu/hu/order/capsules/${line}` + hash;
         }
 
         function showUserscriptSetup() {
